@@ -1,7 +1,7 @@
 {
-  "name": "itspire/monolog-loki",
+  "name": "jonshawpzbp/monolog-loki",
   "type": "library",
-  "description": "Monolog handler for Grafana Loki",
+  "description": "Monolog handler for Grafana Loki (with log level detection fix)",
   "license": "BSD-3-Clause",
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -9,6 +9,10 @@
     {
       "name": "Ryan RAJKOMAR",
       "email": "ryan.rajkomar@itspire.fr"
+    },
+    {
+      "name": "Jonathan Shaw",
+      "email": "jonathan.shaw@postoffice.co.uk"
     }
   ],
   "support": {
