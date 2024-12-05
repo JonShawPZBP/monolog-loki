@@ -51,6 +51,8 @@ class LokiFormatter extends NormalizerFormatter
         unset($formattedRecord['context']['labels']);
         $formattedRecord['context'] = array_merge($this->context, $formattedRecord['context']);
         $preparedRecord = $this->prepareRecord($formattedRecord);
+        $preparedRecord['level'] = mb_strtolower($preparedRecord['level_name']);
+        unset($preparedRecord['level_name']);
 
         return [
             'stream' => array_merge($this->labels, $customLabels, $this->getMonologLabels($preparedRecord)),
